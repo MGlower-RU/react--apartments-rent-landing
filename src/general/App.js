@@ -1,5 +1,6 @@
 import ExplorerFeatures from '../ExplorerFeatures/ExplorerFeatures';
 import Footer from '../Footer/Footer';
+import Furniture from '../Furniture/Furniture';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Membership from '../Membership/Membership';
@@ -14,6 +15,7 @@ export default function App() {
       <Main />
       <Membership />
       <ExplorerFeatures />
+      <Furniture />
       <Reviews />
       <Footer />
     </div>

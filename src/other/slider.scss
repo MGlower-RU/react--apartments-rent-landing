@@ -1,0 +1,78 @@
+.swiper {
+  --gap: 2.4rem;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .swiper-wrapper {
+    margin-bottom: 0.8rem;
+  }
+  
+  .swiper-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    height: 4.4rem;
+    width: 8%;
+  
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      top: initial;
+      bottom: 0;
+      left: initial;
+      right: initial;
+      user-select: none;
+      height: 100%;
+      width: 2.5rem;
+      margin: 0;
+  
+      &:first-of-type {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+  
+      &::after, &::before {
+        display: none;
+      }
+  
+      &[class$='-disabled'] {
+        opacity: 1;
+  
+        svg {
+          path {
+            stroke: rgba(var(--black), .5);
+          }
+        }
+      }
+  
+      svg {
+        path {
+          stroke: rgba(var(--black));
+        }
+      }
+    }
+  }
+  
+  .swiper-scrollbar {
+    display: flex;
+    order: 2;
+    position: static;
+    left: initial;
+    width: calc(92% - var(--gap));
+    height: 0.2rem;
+    background: rgba(var(--white), .4);
+    border-radius: 0;
+  
+    &-drag {
+      background: rgba(var(--white));
+      border-radius: inherit;
+    }
+  }
+}
