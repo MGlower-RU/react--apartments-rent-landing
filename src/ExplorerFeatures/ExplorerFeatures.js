@@ -1,6 +1,6 @@
 import { useId } from 'react'
 
-import Picture from './picture.png'
+import Picture from './picture.webp'
 import Pig from './pig.png'
 import Carpet from './carpet.png'
 import Tag from './tag.png'

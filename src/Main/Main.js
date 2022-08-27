@@ -1,6 +1,6 @@
 import { ReactComponent as Loupe } from "./search.svg"
 
-import Picture from './picture.png'
+import Picture from './picture.webp'
 
 import './main.scss'
 
