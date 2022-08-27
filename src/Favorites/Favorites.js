@@ -1,6 +1,5 @@
-import { useContext, useId, useState } from 'react'
+import { useId, useState } from 'react'
 import { SwiperSlide } from 'swiper/react'
-import { MainContext } from '../general/Context'
 import Slider from '../other/Slider'
 
 import Austin from './slider/austin.png'
@@ -12,12 +11,6 @@ import Birmingham from './slider/birmingham.png'
 import './favorites.scss'
 
 export default function Favorites() {
-  const { Scrollbar, Navigation } = useContext(MainContext)
-
-  const sliderOptions = {
-    modules: [Navigation, Scrollbar],
-  }
-
   const [citiesToShow, setCitiesToShow] = useState(24)
 
   const sliderData = [
@@ -278,7 +271,7 @@ export default function Favorites() {
       <p>
         We offer over 80 cities, and counting, across the U.S. and encourage you to explore with our free, 7-day travel benefit.
       </p>
-      <Slider options={sliderOptions}>
+      <Slider gap={24}>
         {sliderData.map(({img, id, city}) => (
           <SwiperSlide key={id}>
             <div

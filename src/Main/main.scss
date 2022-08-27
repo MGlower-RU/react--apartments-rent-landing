@@ -42,6 +42,7 @@
     font-size: 1.6rem;
     line-height: 1em;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 
     svg {
       transform: translateY(.4rem);
@@ -49,6 +50,16 @@
 
       path {
         stroke: rgba(var(--black));
+        transition: stroke .2s ease-in-out;
+      }
+    }
+
+    &:hover, &:focus-visible {
+      background-color: rgba(var(--green), .8);
+      color: rgba(var(--white), .8);
+
+      svg path {
+        stroke: rgba(var(--black), .8);
       }
     }
   }

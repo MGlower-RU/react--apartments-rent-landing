@@ -1,6 +1,5 @@
-import { useContext, useId } from "react"
+import { useId } from "react"
 import { SwiperSlide } from 'swiper/react'
-import { MainContext } from "../general/Context"
 
 import Slider from "../other/Slider"
 
@@ -21,8 +20,6 @@ import { ReactComponent as Pin } from "./furniture_slider/pin.svg"
 import './furniture.scss'
 
 export default function Furniture() {
-  const { Scrollbar, Navigation } = useContext(MainContext)
-
   const sliderData = [
     {
       img: Bed,
@@ -98,10 +95,6 @@ export default function Furniture() {
     },
   ]
 
-  const sliderOptions = {
-    modules: [Navigation, Scrollbar],
-  }
-
   return (
     <div className="furniture__wrapper">
       <div className="furniture__image"><Chair/></div>
@@ -112,7 +105,7 @@ export default function Furniture() {
         Enjoy all the amenities of a fully<br/>
         furnished Landing home
       </h1>
-      <Slider options={sliderOptions}>
+      <Slider>
         {sliderData.map(({img, id, location}) => (
           <SwiperSlide key={id}>
             <div

@@ -1,11 +1,14 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import { Swiper } from "swiper/react";
+import { MainContext } from "../general/Context";
 
 import { ReactComponent as Arrow } from "./arrow_right.svg";
 
 import './slider.scss'
 
-export default function Slider({gap = 16, options, isNavigation, children}) {  
+export default function Slider({gap = 16, children}) {
+  const { Scrollbar, Navigation } = useContext(MainContext)
+
   const prevRef = useRef(null)
   const nextRef = useRef(null)
 
@@ -13,6 +16,7 @@ export default function Slider({gap = 16, options, isNavigation, children}) {
     <Swiper
       spaceBetween={gap}
       slidesPerView={'auto'}
+      modules={[Navigation, Scrollbar]}
       navigation={{
         prevEl: prevRef.current,
         nextEl: nextRef.current
@@ -26,7 +30,6 @@ export default function Slider({gap = 16, options, isNavigation, children}) {
         swiper.navigation.init()
         swiper.navigation.update()
       }}
-      {...options}
     >
       {children}
       <div className="swiper-buttons">

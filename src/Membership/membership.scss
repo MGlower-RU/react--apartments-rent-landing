@@ -15,6 +15,7 @@
   font-size: 1.6rem;
   line-height: 1.5em;
   color: rgba(var(--black));
+  transition: color .2s ease-in-out;
 
   svg {
     width: 1.2rem;
@@ -23,6 +24,15 @@
 
     path {
       stroke: rgba(var(--black));
+      transition: stroke .2s ease-in-out;
+    }
+  }
+
+  &:hover, &:focus-visible {
+    color: rgba(var(--green));
+
+    svg path {
+      stroke: rgba(var(--green));
     }
   }
 }
