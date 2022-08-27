@@ -3,16 +3,16 @@ import { SwiperSlide } from 'swiper/react'
 
 import Slider from "../other/Slider"
 
-import FurnitureIncludes1 from './furniture_includes/1.png'
-import FurnitureIncludes2 from './furniture_includes/2.png'
-import FurnitureIncludes3 from './furniture_includes/3.png'
-import FurnitureIncludes4 from './furniture_includes/4.png'
-import FurnitureIncludes5 from './furniture_includes/5.png'
-import FurnitureIncludes6 from './furniture_includes/6.png'
-import FurnitureIncludes7 from './furniture_includes/7.png'
-import FurnitureIncludes8 from './furniture_includes/8.png'
-import Bed from './furniture_slider/bed.png'
-import Sofa from './furniture_slider/sofa.png'
+import FurnitureIncludes1 from './furniture_includes/1.webp'
+import FurnitureIncludes2 from './furniture_includes/2.webp'
+import FurnitureIncludes3 from './furniture_includes/3.webp'
+import FurnitureIncludes4 from './furniture_includes/4.webp'
+import FurnitureIncludes5 from './furniture_includes/5.webp'
+import FurnitureIncludes6 from './furniture_includes/6.webp'
+import FurnitureIncludes7 from './furniture_includes/7.webp'
+import FurnitureIncludes8 from './furniture_includes/8.webp'
+import Bed from './furniture_slider/bed.webp'
+import Sofa from './furniture_slider/sofa.webp'
 
 import { ReactComponent as Chair } from "./chair.svg"
 import { ReactComponent as Pin } from "./furniture_slider/pin.svg"

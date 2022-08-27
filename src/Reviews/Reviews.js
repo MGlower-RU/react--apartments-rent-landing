@@ -3,12 +3,12 @@ import { useId } from 'react'
 import { ReactComponent as Star } from './star.svg'
 import { ReactComponent as Tag } from './tag.svg'
 
-import WSJ from './wsg.png'
-import Forbes from './forbes.png'
-import Bloomberg from './bloomberg.png'
-import Yahoo from './yahoo.png'
-import ChicagoTribune from './chicago_tribune.png'
-import Curbed from './curbed.png'
+import WSJ from './wsg.webp'
+import Forbes from './forbes.webp'
+import Bloomberg from './bloomberg.webp'
+import Yahoo from './yahoo.webp'
+import ChicagoTribune from './chicago_tribune.webp'
+import Curbed from './curbed.webp'
 
 import './reviews.scss'
 

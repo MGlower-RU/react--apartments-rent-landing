@@ -1,9 +1,9 @@
 import { useId } from 'react'
 
 import Picture from './picture.webp'
-import Pig from './pig.png'
-import Carpet from './carpet.png'
-import Tag from './tag.png'
+import Pig from './pig.webp'
+import Carpet from './carpet.webp'
+import Tag from './tag.webp'
 
 import './explorer-features.scss'
 

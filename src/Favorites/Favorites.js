@@ -2,11 +2,11 @@ import { useId, useState } from 'react'
 import { SwiperSlide } from 'swiper/react'
 import Slider from '../other/Slider'
 
-import Austin from './slider/austin.png'
-import Denver from './slider/denver.png'
-import Dallas from './slider/dallas.png'
-import Atlanta from './slider/atlanta.png'
-import Birmingham from './slider/birmingham.png'
+import Austin from './slider/austin.webp'
+import Denver from './slider/denver.webp'
+import Dallas from './slider/dallas.webp'
+import Atlanta from './slider/atlanta.webp'
+import Birmingham from './slider/birmingham.webp'
 
 import './favorites.scss'
 
