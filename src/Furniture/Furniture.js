@@ -54,26 +54,6 @@ export default function Furniture() {
       location: 'Chicago, Aurelien',
       id: useId(),
     },
-    {
-      img: Bed,
-      location: 'Grand Flats, Saint Louis',
-      id: useId(),
-    },
-    {
-      img: Sofa,
-      location: 'Chicago, Aurelien',
-      id: useId(),
-    },
-    {
-      img: Bed,
-      location: 'Grand Flats, Saint Louis',
-      id: useId(),
-    },
-    {
-      img: Sofa,
-      location: 'Chicago, Aurelien',
-      id: useId(),
-    },
   ]
   const furnitureIncludes = [
     {
@@ -120,20 +100,19 @@ export default function Furniture() {
 
   const sliderOptions = {
     modules: [Navigation, Scrollbar],
-    scrollbar: { draggable: true },
   }
 
   return (
     <div className="furniture__wrapper">
-      <span><Chair/></span>
-      <div className="furniture__small-header">
+      <div className="furniture__image"><Chair/></div>
+      <span>
         Landing Furnished
-      </div>
+      </span>
       <h1>
         Enjoy all the amenities of a fully<br/>
         furnished Landing home
       </h1>
-      <Slider options={sliderOptions} isNavigation={true}>
+      <Slider options={sliderOptions}>
         {sliderData.map(({img, id, location}) => (
           <SwiperSlide key={id}>
             <div
@@ -147,9 +126,9 @@ export default function Furniture() {
           </SwiperSlide>
         ))}
       </Slider>
-      <div className="furniture__small-header">
+      <span>
         Every Landing includes
-      </div>
+      </span>
       <div className="furniture__grid">
         {furnitureIncludes.map(({id, title, img}) => (
           <div key={id} className="furniture__grid__item">

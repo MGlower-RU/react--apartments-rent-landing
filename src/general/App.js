@@ -1,4 +1,5 @@
 import ExplorerFeatures from '../ExplorerFeatures/ExplorerFeatures';
+import Favorites from '../Favorites/Favorites';
 import Footer from '../Footer/Footer';
 import Furniture from '../Furniture/Furniture';
 import Header from '../Header/Header';
@@ -17,6 +18,7 @@ export default function App() {
       <ExplorerFeatures />
       <Furniture />
       <Reviews />
+      <Favorites />
       <Footer />
     </div>
   );

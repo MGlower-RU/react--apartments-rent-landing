@@ -13,10 +13,11 @@ export default function Slider({gap = 16, options, isNavigation, children}) {
     <Swiper
       spaceBetween={gap}
       slidesPerView={'auto'}
-      navigation={isNavigation ? {
+      navigation={{
         prevEl: prevRef.current,
         nextEl: nextRef.current
-      }: null}
+      }}
+      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => {
         swiper.params.navigation.prevEl = prevRef.current
         swiper.params.navigation.nextEl = nextRef.current
@@ -28,13 +29,10 @@ export default function Slider({gap = 16, options, isNavigation, children}) {
       {...options}
     >
       {children}
-      {
-        isNavigation &&
-        <div className="swiper-buttons">
-          <div ref={prevRef} className='swiper-button-prev'><Arrow/></div>
-          <div ref={nextRef} className='swiper-button-next'><Arrow/></div>
-        </div>
-      }
+      <div className="swiper-buttons">
+        <div ref={prevRef} className='swiper-button-prev'><Arrow/></div>
+        <div ref={nextRef} className='swiper-button-next'><Arrow/></div>
+      </div>
     </Swiper>
   )
 }
